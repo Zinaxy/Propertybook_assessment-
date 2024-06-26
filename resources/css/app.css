@@ -1,0 +1,174 @@
+/* resources/css/app.css */
+
+/* Import Bootstrap */
+@import "bootstrap/dist/css/bootstrap.min.css";
+
+/* Import Bootstrap Icons */
+@import "bootstrap-icons/font/bootstrap-icons.css";
+
+/* Your custom styles */
+body {
+    background-color: #f8f9fa;
+}
+
+h1 {
+    color: #007bff;
+    font-weight: 600;
+    margin-top: 20px;
+}
+
+/* Add more custom styles here */
+body {
+    font-family: "Arial", sans-serif;
+}
+.navbar-brand {
+    font-weight: 900;
+    padding-right: 20px;
+}
+
+.hero-section {
+    padding: 100px 0;
+    .caption {
+        text-align: left;
+    }
+}
+.page-img {
+    border-radius: 5px;
+}
+.play {
+    background-color: white;
+    padding: 8px;
+    margin: 2;
+    margin-left: 10px;
+    border-radius: 100%;
+}
+.our-story-section {
+    background-color: #999;
+    h6 {
+        margin-bottom: 20px;
+        text-transform: uppercase;
+        font-weight: 700;
+    }
+    .story {
+        font-weight: 900;
+        font-size: 28px;
+    }
+    .nav-pills {
+        background-color: #d6d6d6;
+        padding: 8px;
+        border-radius: 5px;
+        .nav-item {
+            padding: 0px 8px;
+        }
+        .nav-link {
+            background-color: white;
+            color: black;
+            &.active[aria-selected="true"] {
+                background-color: #007bff !important;
+                color: white !important;
+            }
+        }
+    }
+}
+.page-section {
+    padding: 100px 0px;
+}
+
+.pill-heading {
+    width: 120px;
+    border-radius: 100px;
+    text-align: center;
+    margin: auto;
+    font-weight: 700;
+    margin-bottom: 80px;
+}
+.services-section {
+    .card {
+        margin-bottom: 24px;
+        text-align: left;
+        border: none;
+        height: 280px;
+        .card-title {
+            font-weight: 700;
+            font-size: 16px;
+            margin-bottom: 16px;
+        }
+        .card-text {
+            font-size: 14px;
+        }
+    }
+    .icon {
+        border: 1px solid #007bff;
+        font-size: 48px;
+        color: #007bff;
+        width: 50px;
+        height: 50px;
+        border-radius: 100px;
+        text-align: center;
+        img,
+        i {
+            width: 30px;
+            height: 30px;
+            margin-top: -30px;
+        }
+    }
+}
+
+.pricing-section {
+    .card-title {
+        font-size: 16px;
+        font-weight: 700;
+        border-radius: 100px;
+        padding: 4px 16px;
+        margin: 20px 0px;
+    }
+    .card-body {
+        border-radius: 10px;
+        padding: 30px;
+        h3 {
+            font-weight: 700;
+            font-size: 36px;
+            padding: 18px 0px;
+            sup,
+            span {
+                font-size: 18px;
+                color: #525252;
+            }
+        }
+        a {
+            text-transform: uppercase;
+            font-size: 12px;
+            font-weight: 700;
+        }
+        .list {
+            margin-top: 18px;
+            ul {
+                list-style: none;
+                text-align: left;
+                margin-left: -26px;
+                font-weight: 700;
+                li {
+                    margin-bottom: 10px;
+                }
+                span {
+                    margin-left: 12px;
+                    color: #525252;
+                    font-weight: 400;
+                }
+            }
+        }
+    }
+}
+
+.cta-section {
+    background: #007bff;
+    padding: 100px 0;
+}
+
+.cta-section h2 {
+    margin-bottom: 20px;
+}
+
+.cta-section p {
+    margin-bottom: 30px;
+}
