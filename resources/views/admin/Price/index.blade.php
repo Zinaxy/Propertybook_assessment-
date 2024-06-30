@@ -22,7 +22,8 @@ $num = 1;
                 <div class="col-md-4 mb-2">
                     <div class="card border-0">
                         <div class="card-body">
-                            <h5 class="card-title btn btn-outline-primary btn-sm">
+                            <h5 @if ($num==2) class="card-title btn btn-primary text-white btn-sm" @else
+                                class="card-title btn btn-outline-primary btn-sm" @endif>
                                 {{$price->name}}
                             </h5>
                             <p class="card-text">

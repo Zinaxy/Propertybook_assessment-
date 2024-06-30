@@ -15,7 +15,7 @@
                             <a href="{{route('hero-content.index')}}" class="btn btn-outline-info">Hero Section</a>
                             <a href="{{route('about-us.index')}}" class="btn btn-outline-info">Our Story Section</a>
                             <a href="{{route('services.index')}}" class="btn btn-outline-info">Services</a>
-                            <a href="{{route('about-us.index')}}" class="btn btn-outline-info">Pricing</a>
+                            <a href="{{route('prices.index')}}" class="btn btn-outline-info">Pricing</a>
                         </div>
                     </div>
                 </div>

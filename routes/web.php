@@ -24,15 +24,17 @@ use App\Http\Controllers\WelcomePageController;
 | be assigned to the "web" middleware group. Make something great!
 |
 */
-
+//welcome page routes
 Route::get('/', function () {
    return view('welcome',[
         'heroContent' => new HeroResource(Hero::latest()->first()),
         'services' => Service::latest()->get(),
         'aboutInfo' => new OurStoryResource(OurStory::latest()->first()),
-         'prices' => Price::latest()->limit(3),
+         'prices' => Price::latest()->paginate(3),
     ]);
 });
+
+#guest routes
 Route::get('register', [AuthController::class, 'register'])->name('register');
 Route::post('register', [AuthController::class, 'store']);
 Route::get('login', [AuthController::class, 'login'])->name('login');

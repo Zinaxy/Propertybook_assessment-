@@ -9,7 +9,7 @@ $num = 1;
 <x-Navbar />
 
 <!-- Hero Section -->
-<section class="hero-section text-white bg-primary">
+<section class="hero-section text-white bg-primary" id="hero">
     <div class="container text-center">
         <div class="row align-items-center">
             @if (DB::table('heroes')->count() >= 1)
@@ -46,7 +46,7 @@ $num = 1;
 </section>
 
 <!-- Our Story Section -->
-<section class="our-story-section bg-light page-section">
+<section class="our-story-section bg-light page-section" id="#aboutus">
     <div class="container">
         @if (DB::table('our_stories')->count() >= 1)
         <div class="row">
@@ -127,7 +127,10 @@ $num = 1;
             <div class="col-md-4 mb-4">
                 <div class="card border-0">
                     <div class="card-body">
-                        <h5 class="card-title btn btn-outline-primary btn-sm">{{$price->name}}</h5>
+                        <h5 @if ($num==2) class="card-title btn btn-primary text-white btn-sm" @else
+                            class="card-title btn btn-outline-primary btn-sm" @endif>
+                            {{$price->name}}
+                        </h5>
                         <p class="card-text">{{$price->title}}</p>
                         <h3><sup>$</sup>{{$price->price}}<span>/mo</span></h3>
                         <a href="#" @if ($num==2) class="btn btn-primary" @else class="btn btn-outline-primary"
